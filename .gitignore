@@ -1,0 +1,89 @@
+# =========================================================
+# MyFarm Backend - FastAPI / Python
+# =========================================================
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# Si el venv está mezclado en la raíz del proyecto
+/bin/
+/include/
+/lib/
+/lib64/
+/lib64
+/pyvenv.cfg
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*$py.class
+
+# Logs
+*.log
+logs/
+uvicorn.log
+gunicorn.log
+
+# Bases locales / respaldos
+*.sqlite
+*.sqlite3
+*.db
+database.db
+dump.sql
+backup.sql
+backups/
+
+# Permitir scripts SQL importantes del proyecto
+!myfarm_db.sql
+!myfarm_password_reset_patch.sql
+
+# Archivos subidos por usuarios
+uploads/*
+!uploads/.gitkeep
+!uploads/products/
+!uploads/products/.gitkeep
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.cache/
+.tox/
+.nox/
+
+# Build / distribución
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# IDE / Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+*:Zone.Identifier
+
+# Temporales
+*.tmp
+*.temp
+*.bak
+*.old
